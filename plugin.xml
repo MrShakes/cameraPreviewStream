@@ -25,6 +25,7 @@
     <source-file src="src/android/FaceTrackActivity.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/CameraSourcePreview.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/GraphicOverlay.java" target-dir="src/com/cordovaplugincamerapreview" />
+    <source-file src="src/android/FaceGraphic.java" target-dir="src/com/cordovaplugincamerapreview" />
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="CameraPreview">
