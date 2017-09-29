@@ -22,7 +22,7 @@
     <source-file src="src/android/camera_activity.xml" target-dir="res/layout" />
     <source-file src="src/android/camera_theme.xml" target-dir="res/values" />
     <source-file src="src/android/camera_ids.xml" target-dir="res/values" />
-    <source-file src="src/android/FaceTrackActivity.java" target-dir="src/com/cordovaplugincamerapreview" />
+    <source-file src="src/android/FaceTrackerActivity.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/CameraSourcePreview.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/GraphicOverlay.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/FaceGraphic.java" target-dir="src/com/cordovaplugincamerapreview" />
