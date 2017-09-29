@@ -39,8 +39,6 @@
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <activity android:name="com.cordovaplugincamerapreview.CameraActivity" android:screenOrientation="portrait" android:theme="@style/CameraPreviewTheme" />
     </config-file>
-    <framework src="com.android.support:support-v4:24.0.0" />
-    <framework src="com.android.support:support-v7:24.0.0" />
   </platform>
 
   <platform name="ios">
