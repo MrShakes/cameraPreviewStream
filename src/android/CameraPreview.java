@@ -65,7 +65,7 @@ public class CameraPreview extends CordovaPlugin implements CameraActivity.Camer
   private CallbackContext takePictureCallbackContext;
   private CallbackContext setFocusCallbackContext;
   private CallbackContext startCameraCallbackContext;
-  private CallbackContext previez;
+  private CallbackContext streamCallbackContext;
 
   private CallbackContext execCallback;
   private JSONArray execArgs;
@@ -299,17 +299,17 @@ public class CameraPreview extends CordovaPlugin implements CameraActivity.Camer
 
   private boolean startStream(CallbackContext callbackContext) {
 
-    // Start stream somehow
-    Camera camera = fragment.getCamera();
-    previez = camera.setPreviewCallback();
+    // Send over to CameraActivity
+    fragment.startStream();
 
-    Log.d(TAG, "Preview Callback: " + previez);
-    //callbackContext.success(previez);
+    Log.d(TAG, "Stream action started");
+
+    streamCallbackContext = callbackContext;
     return true;
   }
 
   public void onPictureTaken(String originalPicture) {
-    Log.d(TAG, "returning picture");
+    Log.d(TAG, "returning pictures");
 
     JSONArray data = new JSONArray();
     data.put(originalPicture);
@@ -317,6 +317,17 @@ public class CameraPreview extends CordovaPlugin implements CameraActivity.Camer
     PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, data);
     pluginResult.setKeepCallback(true);
     takePictureCallbackContext.sendPluginResult(pluginResult);
+  }
+
+  public void onStreamGotten(String stream) {
+    Log.d(TAG, "returning stream");
+
+    JSONArray data = new JSONArray();
+    data.put(stream);
+
+    PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, data);
+    pluginResult.setKeepCallback(true);
+    streamCallbackContext.sendPluginResult(pluginResult);
   }
 
   public void onPictureTakenError(String message) {
