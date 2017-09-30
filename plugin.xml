@@ -28,7 +28,7 @@
     <source-file src="src/android/layout-land/main.xml" target-dir="res/layout-land" />
     <source-file src="src/android/camera_theme.xml" target-dir="res/values" />
     <source-file src="src/android/camera_ids.xml" target-dir="res/values" />
-    <source-file src="src/android/values/facetracker.xml" target-dir="res/values" />
+    <resource-file src="src/android/values/facetracker.xml" target="res/values/facetracker.xml" />
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="CameraPreview">
