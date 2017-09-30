@@ -28,12 +28,15 @@
     <source-file src="src/android/FaceGraphic.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/layout/main.xml" target-dir="res/layout" />
     <source-file src="src/android/layout-land/main.xml" target-dir="res/layout-land" />
+    <source-file src="src/android/values/strings.xml" target-dir="res/values" />
 
     <config-file target="res/values/strings.xml" parent="/*">
-      <string name="ok">OK</string>
-      <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
-      <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
-      <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+      <resources>
+        <string name="ok">OK</string>
+        <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+        <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+        <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+      </resources>
     </config-file>
 
     <config-file target="res/xml/config.xml" parent="/*">
