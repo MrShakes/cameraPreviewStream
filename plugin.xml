@@ -28,7 +28,7 @@
     <source-file src="src/android/FaceGraphic.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/layout/main.xml" target-dir="res/layout" />
     <source-file src="src/android/layout-land/main.xml" target-dir="res/layout-land" />
-    <resource-file src="src/android/values/strings.xml" target-dir="res/values" />
+    <resource-file src="src/android/values/stringsFoo.xml" target-dir="res/values/stringsFoo.xml" />
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="CameraPreview">
