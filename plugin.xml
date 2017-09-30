@@ -19,15 +19,15 @@
     <source-file src="src/android/CustomSurfaceView.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/Preview.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/TapGestureDetector.java" target-dir="src/com/cordovaplugincamerapreview" />
-    <source-file src="src/android/camera_activity.xml" target-dir="res/layout" />
-    <source-file src="src/android/camera_theme.xml" target-dir="res/values" />
-    <source-file src="src/android/camera_ids.xml" target-dir="res/values" />
     <source-file src="src/android/FaceTrackerActivity.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/CameraSourcePreview.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/GraphicOverlay.java" target-dir="src/com/cordovaplugincamerapreview" />
     <source-file src="src/android/FaceGraphic.java" target-dir="src/com/cordovaplugincamerapreview" />
+    <source-file src="src/android/camera_activity.xml" target-dir="res/layout" />
     <source-file src="src/android/layout/main.xml" target-dir="res/layout" />
     <source-file src="src/android/layout-land/main.xml" target-dir="res/layout-land" />
+    <source-file src="src/android/camera_theme.xml" target-dir="res/values" />
+    <source-file src="src/android/camera_ids.xml" target-dir="res/values" />
     <resource-file src="src/android/values/stringsFoo.xml" target-dir="res/values/stringsFoo.xml" />
 
     <config-file target="res/xml/config.xml" parent="/*">
