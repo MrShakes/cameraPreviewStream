@@ -50,6 +50,10 @@ CameraPreview.show = function(onSuccess, onError) {
     exec(onSuccess, onError, PLUGIN_NAME, "showCamera", []);
 };
 
+CameraPreview.startTracking = function(onSuccess, onError) {
+    exec(onSuccess, onError, PLUGIN_NAME, "startTracking", []);
+};
+
 CameraPreview.takePicture = function(opts, onSuccess, onError) {
     if (!opts) {
         opts = {};
